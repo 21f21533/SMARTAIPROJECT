@@ -1,0 +1,14 @@
+2025-05-10 11:54:54 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "1" "buying house" "earn money" "2025-05-10T13:54" "2028-01-10T13:54" > nul 2>&1
+2025-05-10 12:42:14 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "2" "abaya business" "Open a business near my house" "2025-05-10T14:41" "2025-07-31T21:47" > nul 2>&1
+2025-05-11 15:32:03 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "3" "buying A Car" "Planning for having a car" "2025-05-11T17:31" "2025-07-11T17:32" > nul 2>&1
+2025-05-11 15:32:30 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "4" "buying A Car" "Planning for having a new car BMW" "2025-05-11T17:31" "2025-07-11T17:32" > nul 2>&1
+2025-05-11 15:46:47 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "5" "write Chapter 1" "Start writing the introduction chapter of the project report" "2025-05-11T17:46" "2025-07-31T17:46" > nul 2>&1
+2025-05-11 15:47:13 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "6" "write Chapter 1" "Start writing the introduction chapter of the project report" "2025-05-11T17:46" "2025-07-31T17:46" > nul 2>&1
+2025-05-11 15:50:47 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "7" "write Chapter 1" "Start writing the introduction chapter of the project report" "2025-05-11T17:50" "2025-09-26T22:55" > nul 2>&1
+2025-05-11 15:51:07 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "8" "write Chapter 1" "Start writing the introduction chapter of the project report" "2025-05-11T17:50" "2025-09-26T22:55" > nul 2>&1
+2025-05-11 15:52:32 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "9" "car" "buying a car" "2025-05-11T17:52" "2025-07-31T22:57" > nul 2>&1
+2025-05-11 15:53:02 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "10" "car" "buying a car" "2025-05-11T17:52" "2025-07-31T22:57" > nul 2>&1
+2025-05-11 16:00:53 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "11" "buying Car" "Planning for having a new car" "2025-05-11T18:00" "2027-06-11T18:00" > nul 2>&1
+2025-05-11 16:27:52 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "12" "buying car" "Planning a new Car" "2025-05-11T18:27" "2027-01-11T22:31" > nul 2>&1
+2025-05-11 16:28:10 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "13" "buying car" "Planning having  a new Car BMW" "2025-05-11T18:27" "2027-01-11T22:31" > nul 2>&1
+2025-05-18 15:33:30 CMD: ../python/venv/Scripts/python.exe ../python/task_generator.py "14" "i want A website for my Abaya business" "How will I start making the website" "2025-05-18T17:33" "2025-06-18T17:33" > nul 2>&1

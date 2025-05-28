@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Task</title>
+  <link rel="icon" href="../images/icon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 25px;
+      width: 100%;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #218838;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>+ Add New Task</h2>
+    <form action="add_task.php" method="POST">
+      <label for="title">Task Title:</label>
+      <input type="text" name="title" required>
+
+      <label for="description">Description:</label>
+      <textarea name="description" rows="4" required></textarea>
+
+      <label for="start_time">Start Date & Time:</label>
+      <input type="datetime-local" name="start_time" required>
+
+      <label for="end_time">End Date & Time:</label>
+      <input type="datetime-local" name="end_time" required>
+
+      <label><input type="checkbox" name="is_urgent"> Mark as Urgent</label>
+      <label><input type="checkbox" name="is_recurring"> Make it Recurring</label>
+
+      <input type="submit" value="Create Task">
+    </form>
+  </div>
+</body>
+</html>

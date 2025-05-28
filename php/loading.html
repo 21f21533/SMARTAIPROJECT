@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generating AI Plan...</title>
+  <link rel="icon" href="../images/icon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .progress-container {
+      width: 400px;
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 30px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #28a745;
+      text-align: center;
+      color: white;
+      line-height: 30px;
+      font-weight: bold;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧠 AI is planning your task... Please wait</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="bar">0%</div>
+  </div>
+
+  <script>
+    const bar = document.getElementById("bar");
+    let width = 0;
+
+    const progressInterval = setInterval(() => {
+      if (width < 75) {
+        width += Math.random() * 3;
+        bar.style.width = width.toFixed(0) + "%";
+        bar.innerText = width.toFixed(0) + "%";
+      }
+    }, 300);
+
+    // Poll the backend to see if Python is done
+    const checkDone = setInterval(() => {
+      fetch("check_task_status.php")
+        .then(res => res.text())
+        .then(data => {
+          if (data.trim() === "done") {
+            clearInterval(progressInterval);
+            clearInterval(checkDone);
+            bar.style.width = "100%";
+            bar.innerText = "100%";
+            setTimeout(() => {
+              window.location.href = "dashboard.php";
+            }, 1000);
+          }
+        });
+    }, 2000);
+  </script>
+</body>
+</html>
